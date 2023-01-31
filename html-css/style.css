@@ -1,0 +1,70 @@
+.main {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 8px #ccc;
+  padding: 13px 13px;
+}
+
+.main>.inputs {
+  display: flex;
+}
+
+.main>.inputs>.calc {
+  display: grid;
+  gap: 3px 3px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 40px 40px 40px 40px 40px;
+}
+
+.main>.inputs>.calc>div {
+  background-color: aquamarine;
+  color: rgb(104, 100, 100);
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.main>.inputs>.calc>.item1 {
+  grid-column: 1 / span 3;
+  width: 310px;
+  background-color: aliceblue;
+  color: rgb(144, 138, 138);
+  text-align: right;
+  padding: 0 15px;
+  box-sizing: border-box;
+  letter-spacing: 0.7px;
+}
+
+.calc>div {
+  border: 1px solid #ccc;
+  width: 100px;
+}
+
+.main>.inputs>.math-ops>div {
+  width: 40px;
+  height: 40px;
+  background-color: aquamarine;
+  color: rgb(104, 100, 100);
+  margin-bottom: 3px;
+  margin-left: 3px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.main>.inputs>.calc>div:hover,
+.main>.inputs>.math-ops>div:hover {
+  background-color: rgb(124, 207, 179);
+  transition: 0.3s ease-in;
+}
+
+.main>.inputs>.calc>div:active,
+.main>.inputs>.math-ops>div:active {
+  color: rgb(212, 7, 7);
+}
+
+.main>.inputs>.calc>.item1:hover {
+  background-color: aliceblue
+}
